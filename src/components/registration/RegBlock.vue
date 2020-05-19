@@ -1,12 +1,37 @@
 <template>
 <div class="body">
   <form class="reg">
-    <h1>Регистрация</h1>
-    <input v-model="name" type="text" placeholder="Имя" required>
-    <input v-model="lastname" type="text" placeholder="Фамилия" required>
-    <input v-model="email" type="email" placeholder="Email" required>
-    <input v-model="password" type="password" placeholder="Password" required>
+    <div class="wrapper">
 
+      <div class="header">
+        <h1>тайный <br>санта</h1>
+        <p class="corplife">#corplife</p>
+      </div>
+
+      <label for="name">Имя</label>
+      <div class="input_block">
+        <input v-model="name" id="name" type="text" required>
+        <div class="info" data-title="hello"></div>
+      </div>
+
+      <label for="lastname">Фамилия</label>
+      <div class="input_block">
+        <input v-model="lastname" id="lastname" type="text" required>
+        <div class="info" data-title="hello"></div>
+      </div>
+
+      <label for="email">Email</label>
+      <div class="input_block">
+        <input v-model="email" id="email" type="email" required>
+        <div class="info" data-title="hello"></div>
+      </div>
+
+      <label for="pass">Пароль</label>
+      <div class="input_block">
+        <input v-model="password" id="pass" type="password" required>
+        <div class="info" data-title="hello"></div>
+      </div>
+      
       <select name="Департаментs" v-model="Департаментs" required>
         <option v-for='item in data' :key='item' :value="item">{{item}}</option>
       </select>
@@ -15,7 +40,8 @@
         <option v-for='item in branch' :key='item.branch' :value="item.branch" :disabled="item.Департамент != Департаментs ? '' : disabled"> <span>{{item.branch}}</span></option>
       </select>
 
-    <router-link class="link" to="/profile"><button @click='toProf'>Регистрация</button></router-link>
+      <router-link class="link" to="/profile"><button @click='toProf'>Регистрация</button></router-link>
+    </div>
   </form>
 </div>
 </template>
@@ -836,71 +862,107 @@ export default {
 
 <style scoped>
 .body {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
-  width: 100vw;
   background-color: #00A460;
   background-image: url("../../assets/bg_icons.png");
+  background-size: auto;
 }
-
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 55%;
+}
 .reg {
-  padding: 15px;
-  margin-top: 7%;
+  position: absolute;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: auto;
-  width: 500px;
+  width: 40%;
   border-radius: 40px;
   background-color: white;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+label {
+  color: #6B6B6B;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  font-size: 18px;
+}
 
 input {
-  margin-top: 20px;
-  padding-left: 20px;
-  font-size: 20px;
   outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
   border-radius: 30px;
   border-style: solid;
+  border-color: #DDDDDD;
   background-color: #FCFCFC;
-  height: 50px;
-  width: 400px;
+  height: 45px;
+  width: 100%;
 }
 
 select {
-  cursor: pointer;
   outline: none;
-  width: 420px;
-  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
   font-size: 20px;
   border-radius: 30px;
+  border-style: solid;
+  border-color: #DDDDDD;
   border-width: 2px;
-  border-color: black;
   background-color: #FCFCFC;
-  padding-left: 10px;
-  margin-top: 30px;
+  height: 45px;
+  width: 100%;
 }
 
 button {
   outline: none;
   cursor: pointer;
   height: 60px;
+  width: 100%;
   margin-top: 30px;
   background-color: #FF645A;
-  padding-right: 40px;
-  padding-left: 40px;
   border: none;
   color: white;
   border-radius: 30px;
   font-weight: bold;
   font-size: 24px;
 }
-
+h1 {
+  font-size: 36px;
+  color: #ff645a;
+}
+.header p {
+  font-size: 24px;
+  padding-top: 15px;
+  color: #505050;
+}
 button:hover {
   background-color: #b04740;
 }
