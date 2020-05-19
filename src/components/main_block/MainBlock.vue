@@ -1,12 +1,15 @@
 <template>
 <div class="body">
-  <div class="circle"></div>
   <div class="wrapper">
     <div class="main">
-      <p class='titile_h1'>Тайный</p>
-      <p class='titile_h2'>Санта</p>
-      <p class="text">уже принимает участие</p>
+      <div class="main_title">
+        <p class="corplife">#corplife</p>
+        <p class='titile_h1'>тайный <br>санта</p>
+        <button v-if='loginStatus == "Error"' @click='toLogin'>Войти</button>
+        <router-link v-else class="link" to="/profile"><button>Мой профиль {{loginStatus}} </button></router-link>
+      </div>
       <div class="all">
+        <p class="text">уже принимает участие</p>
         <div class="component">
           <p class='count'>340</p>
           <p class='countText'>всего</p>
@@ -20,8 +23,6 @@
           <p class='countText'>из отдела</p>
         </div>
       </div>
-      <button v-if='loginStatus == "Error"' @click='toLogin'> Войти</button>
-      <router-link v-else class="link" to="/profile"><button>Мой профиль {{loginStatus}} </button></router-link>
     </div>
   </div>
 </div>
@@ -49,61 +50,54 @@ a {
 
 .body {
   padding: 10px;
-  height: 1050px;
+  height: 600px;
   background-color: #00A460;
-  background-image: url('../../assets/Group_6.png');
-  background-repeat: space;
-}
-
-.circle {
-  position: absolute;
-  top: -500px;
-  left: -300px;
-  min-width: 1400px;
-  min-height: 1400px;
-  border-radius: 50%;
-  background: #FFFFFF;
-  border-right: 21px solid #FF645A;
-  border-bottom: 21px solid #FF645A;
+  background-image: url("../../assets/santas/santa_homepage.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 150px 150px;
 }
 
 .wrapper {
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  left: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 70%;
 }
 
 .titile_h1 {
   font-weight: bold;
-  font-size: 60px;
-  color: #FF645A;
-  width: 100%;
-  text-transform: lowercase;
+  font-size: 80px;
+  line-height: 80px;
+  color: white;
 }
 
-.titile_h2 {
-  color: #FF645A;
-  font-weight: bold;
-  font-size: 250px;
-  width: 100%;
-  text-transform: lowercase;
-  margin-top: -160px;
-  margin-left: -10px;
+.corplife {
+  font-size: 24px;
+  padding-top: 15px;
+  font-family: CrocWebLight;
+  color: white;
+}
+
+.main_title {
+  display: flex;
+  flex-direction: column;
 }
 
 .text {
   font-size: 20px;
   color: #494949;
   font-weight: bold;
-  margin-top: -230px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .all {
-  display: flex;
-  align-items: center;
   width: 350px;
-  margin-top: -60px;
 }
 
 .link {
@@ -112,16 +106,12 @@ a {
 }
 
 .component {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
   height: 30px;
 }
 
 .count {
   color: #00A460;
-  font-size: 60px;
+  font-size: 42px;
   font-weight: bold;
   text-align: center;
 }
@@ -130,7 +120,6 @@ a {
   font-size: 25px;
   color: #494949;
   font-weight: 300;
-  margin-top: -80px;
   width: 100%;
 }
 
@@ -138,8 +127,7 @@ button {
   outline: none;
   cursor: pointer;
   height: 60px;
-  margin-top: 140px;
-  width: 80%;
+  width: 100%;
   border: none;
   background-color: #FF645A;
   color: white;

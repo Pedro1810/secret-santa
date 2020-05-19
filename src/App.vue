@@ -57,7 +57,7 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: CrocWebBold, CrocWebLight, CrocWebRegular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -68,6 +68,7 @@ export default {
 }
 
 body {
+  background-color: #00A460;
   padding: 0px;
   margin: 0px;
 }
