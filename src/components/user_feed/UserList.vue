@@ -55,7 +55,11 @@
     margin-right: auto;
 }
 .name {
+    font-family: CrocWebBold;
     font-weight: bold;
     font-size: 18px;
+}
+.about {
+    font-family: CrocWebLight;
 }
 </style>
