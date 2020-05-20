@@ -905,6 +905,7 @@ export default {
   display: flex;
   justify-content: space-between;
 }
+
 label {
   color: #6B6B6B;
   padding-left: 20px;
@@ -954,16 +955,84 @@ button {
   font-weight: bold;
   font-size: 24px;
 }
+
 h1 {
   font-size: 36px;
+  line-height: 36px;
   color: #ff645a;
 }
+
 .header p {
   font-size: 24px;
   padding-top: 15px;
   color: #505050;
 }
+
 button:hover {
   background-color: #b04740;
+}
+
+@media screen and (max-width: 1665px) {
+  label {
+    color: #6B6B6B;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+
+  input {
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #DDDDDD;
+    background-color: #FCFCFC;
+    height: 35px;
+    width: 100%;
+  }
+
+  select {
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #DDDDDD;
+    border-width: 2px;
+    background-color: #FCFCFC;
+    height: 35px;
+    width: 100%;
+  }
+
+  button {
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #FF645A;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #ff645a;
+  }
+
+  .header p {
+    font-size: 24px;
+    padding-top: 15px;
+    color: #505050;
+  }
 }
 </style>

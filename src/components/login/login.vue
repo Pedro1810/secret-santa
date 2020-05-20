@@ -95,6 +95,7 @@ export default {
 }
 h1 {
   font-size: 36px;
+  line-height: 36px;
   color: #ff645a;
 }
 .header p {

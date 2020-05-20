@@ -283,4 +283,97 @@ p {
   margin-left: auto;
   max-width: 85%;
 }
+
+@media screen and (max-width: 1665px) {
+  .card {
+    margin-top: 40px;
+    margin-left: 40px;
+    min-height: 80%;
+    max-width: 20%;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+  }
+  .about {
+    color: #494949;
+    font-size: 15px;
+  }
+
+  .about_active {
+    font-size: 15px;
+    color: #00A460;
+  }
+  .avatar {
+    height: 140px;
+    width: 140px;
+    background-color: #A2A19C;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .name {
+    color: #494949;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .text {
+    margin-top: -20px;
+    margin-left: 40px;
+    width: 450px;
+  }
+
+  label {
+    color: #6B6B6B;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+
+  button {
+    cursor: pointer;
+    align-self: flex-start;
+    height: 40px;
+    margin-top: 30px;
+    border: none;
+    width: 40%;
+    background-color: #ff645a;
+    color: white;
+    border-radius: 30px;
+    border-color: #DDDDDD;
+    font-family: CrocWebRegular;
+    font-size: 15px;
+  }
+
+  button:hover {
+    background-color: #b04740;
+  }
+
+  input {
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #DDDDDD;
+    background-color: #FCFCFC;
+    height: 40px;
+    width: 90%;
+  }
+
+  select {
+    cursor: pointer;
+    outline: none;
+    width: 90%;
+    height: 40px;
+    font-size: 20px;
+    background-color: #FCFCFC;
+    border-radius: 30px;
+    padding-left: 10px;
+  }
+}
 </style>
