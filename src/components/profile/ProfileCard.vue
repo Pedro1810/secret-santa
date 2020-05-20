@@ -47,6 +47,7 @@
           <img src="../../assets/profile_vectors/inactive/1step.svg" alt="" class="step_img">
           <!-- Кружок загорается зеленым, когда нажимается кнопка "Подарок готов" в профиле (меняется класс на circle_active) -->
           <div class="circle_inactive"></div>
+          <!-- Текст загорается зеленым, когда нажимается кнопка "Подарок готов" в профиле (меняется класс на about_active) -->
           <p class="about">Подготовка подарка</p>
         </div>
 
@@ -58,6 +59,7 @@
           <img src="../../assets/profile_vectors/inactive/2step.svg" alt="" class="step_img">
           <!-- Кружок загорается зеленым, когда нажимается кнопка "Отправить подарок" в админ панели -->
           <div class="circle_inactive"></div>
+          <!-- Текст загорается зеленым, когда нажимается кнопка "Отправить подарок" в админ панели (меняется класс на about_active)-->
           <p class="about">Подарок ждет своего получателя</p>
         </div>
 
@@ -69,6 +71,7 @@
           <img src="../../assets/profile_vectors/inactive/3step.svg" alt="" class="step_img">
           <!-- Кружок загорается зеленым, когда нажимается кнопка "Подарок получен" в админ панели -->
           <div class="circle_inactive"></div>
+          <!-- Текст загорается зеленым, когда нажимается кнопка "Подарок получен" в админ панели (меняется класс на about_active)-->
           <p class="about">Ура! Твой подарок получили :)</p>
         </div>
       </div>
@@ -207,13 +210,13 @@ p {
   display: flex;
 }
 
-.status .about {
+.status .about, .about_active{
   text-align: center;
 }
 
 .circle_inactive {
-  height: 18px;
-  width: 18px;
+  min-height: 18px;
+  min-width: 18px;
   border-radius: 50%;
   background-color: white;
   border-style: solid;
@@ -221,8 +224,8 @@ p {
 }
 
 .circle_active {
-  height: 18px;
-  width: 18px;
+  min-height: 18px;
+  min-width: 18px;
   border-radius: 50%;
   background-color: white;
   border-style: solid;
@@ -266,6 +269,11 @@ p {
 .about {
   color: #494949;
   font-size: 18px;
+}
+
+.about_active {
+  font-size: 18px;
+  color: #00A460;
 }
 
 .wrapper {
