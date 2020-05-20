@@ -11,13 +11,11 @@
     <label for="wishlist">Список желаний</label>
     <div class="input_block">
       <input id="wishlist" type="text" v-model="wishlist" required>
-      <div class="info"></div>
     </div>
 
     <label for="blacklist">То, что совсем не нравится</label>
     <div class="input_block">
       <input id="blacklist" type="text" v-model="blacklist" required>
-      <div class="info"></div>
     </div>
     <button @click='registr'>Готов дарить и получать подарки!</button>
   </form>
@@ -85,19 +83,8 @@ input {
 }
 
 .info {
-  height: 65px;
-  width: 69px;
   margin-left: 30px;
   margin-top: -10px;
-  background-image: url("../../assets/green_info.png");
-}
-
-.info:hover {
-  height: 65px;
-  width: 69px;
-  margin-left: 30px;
-  margin-top: -10px;
-  background-image: url("../../assets/visited_info.png");
 }
 
 button {
@@ -106,7 +93,7 @@ button {
   height: 60px;
   margin-top: 30px;
   background-color: #FF645A;
-  width: 85%;
+  width: 90%;
   border: none;
   color: white;
   border-radius: 30px;
@@ -118,4 +105,46 @@ button:hover {
   background-color: #b04740;
 }
 
+@media screen and (max-width: 1665px) {
+  label {
+    color: #6B6B6B;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    font-size: 15px;
+  }
+
+  input {
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #DDDDDD;
+    background-color: #FCFCFC;
+    height: 40px;
+    width: 500px;
+  }
+
+  button {
+    outline: none;
+    cursor: pointer;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #FF645A;
+    width: 90%;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    font-family: CrocWebRegular;
+    font-size: 20px;
+  }
+
+  .info {
+    margin-left: 30px;
+    margin-top: -10px;
+  }
+
+}
 </style>

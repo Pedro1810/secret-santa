@@ -98,4 +98,36 @@ p {
     padding-right: 10px;
     padding-left: 10px;
 }
+
+@media screen and (max-width: 1665px) {
+    img {
+        height: 70px;
+    }
+    .text {
+        padding: 10px;
+        width: 220px;
+        border-radius: 28px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    img {
+        height: 70px;
+    }
+    .text {
+        padding: 10px;
+        width: 180px;
+        border-radius: 28px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    }
+    p {
+        font-size: 13px;
+        text-align: left;
+    }
+    .ps {
+        font-size: 10px;
+        color: #6B6B6B;
+    }
+}
 </style>

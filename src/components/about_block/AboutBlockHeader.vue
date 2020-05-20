@@ -59,4 +59,22 @@ h2 {
 .transition {
     transition: all 0.3s;
 }
+
+@media screen and (max-width: 1665px) {
+    .closed {
+        margin-left: 10%;
+        align-self: center;
+        cursor: pointer;
+        height: 100px;
+        width: 100px;
+    }
+    .opened {
+        margin-left: 10%;
+        align-self: center;
+        cursor: pointer;
+        transform: rotate(90deg);
+        height: 100px;
+        width: 100px;
+    }
+}
 </style>

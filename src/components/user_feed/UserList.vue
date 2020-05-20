@@ -62,4 +62,24 @@
 .about {
     font-family: CrocWebLight;
 }
+@media screen and (max-width: 1665px) {
+    .list div {
+        height: 250px;
+        width: 150px;
+        text-align: center;
+        color: white;
+    }
+    .list div .avatar {
+        height: 140px;
+        background-color: #A2A19C;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .name {
+        font-family: CrocWebBold;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
 </style>

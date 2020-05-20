@@ -51,4 +51,33 @@ img {
     background-color: white;
     padding-bottom: 20px;
 }
+
+@media screen and (max-width: 1665px) {
+    img {
+        height: 80px;
+    }
+    p {
+        font-size: 15px;
+        text-align: left;
+        width: 350px;
+    }
+    h2 {
+        font-size: 20px;
+        color: #FF645A;
+    }
+}
+@media screen and (max-width: 1315px) {
+    img {
+        height: 60px;
+    }
+    p {
+        font-size: 10px;
+        text-align: left;
+        width: 350px;
+    }
+    h2 {
+        font-size: 15px;
+        color: #FF645A;
+    }
+}
 </style>
