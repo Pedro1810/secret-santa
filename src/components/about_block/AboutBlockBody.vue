@@ -55,7 +55,7 @@
     background-color: white;
     justify-content: space-between;
     padding-top: 90px;
-    height: 430px;
+    padding-bottom: 50px;
     width: 100%;
     color: #494949;
 }
@@ -112,6 +112,9 @@ p {
 }
 
 @media screen and (max-width: 1430px) {
+    .body {
+        padding-top: 70px;
+    }
     img {
         height: 70px;
     }
@@ -122,7 +125,7 @@ p {
         box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
     }
     p {
-        font-size: 13px;
+        font-size: 12px;
         text-align: left;
     }
     .ps {

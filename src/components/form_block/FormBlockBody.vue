@@ -43,4 +43,9 @@ h1 {
   padding-right: 10px;
   padding-left: 10px;
 }
+@media screen and (max-width: 1430px) {
+  .body {
+    padding-top: 20px;
+  }
+}
 </style>

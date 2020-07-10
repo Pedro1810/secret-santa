@@ -61,9 +61,9 @@ label {
 
 input {
   outline: none;
+  font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 20px;
   border-radius: 30px;
   border-style: solid;
   border-color: #DDDDDD;
@@ -77,7 +77,6 @@ input {
 }
 
 .title {
-    margin-left: 20px;
     font-size: 20px;
     color: #ff645a;
 }
@@ -93,7 +92,7 @@ button {
   height: 60px;
   margin-top: 30px;
   background-color: #FF645A;
-  width: 90%;
+  width: 570px;
   border: none;
   color: white;
   border-radius: 30px;
@@ -107,44 +106,55 @@ button:hover {
 
 @media screen and (max-width: 1665px) {
   label {
-    color: #6B6B6B;
     padding-left: 20px;
     padding-bottom: 10px;
     padding-top: 20px;
     font-size: 15px;
   }
-
   input {
     outline: none;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 15px;
-    border-radius: 30px;
-    border-style: solid;
-    border-color: #DDDDDD;
-    background-color: #FCFCFC;
     height: 40px;
     width: 500px;
   }
-
   button {
-    outline: none;
-    cursor: pointer;
     height: 50px;
     margin-top: 30px;
-    background-color: #FF645A;
-    width: 90%;
-    border: none;
-    color: white;
-    border-radius: 30px;
-    font-family: CrocWebRegular;
+    width: 520px;
     font-size: 20px;
   }
-
   .info {
     margin-left: 30px;
     margin-top: -10px;
   }
-
 }
+
+@media screen and (max-width: 1430px) {
+  .title {
+    font-size: 16px;
+  }
+  label {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font-size: 12px;
+  }
+  input {
+    outline: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    height: 30px;
+    width: 400px;
+  }
+  button {
+    height: 40px;
+    margin-top: 30px;
+    width: 420px;
+    font-size: 16px;
+  }
+}
+
 </style>

@@ -868,7 +868,7 @@ export default {
   top: 0;
   background-color: #00A460;
   background-image: url("../../assets/bg_icons.png");
-  background-size: auto;
+  background-size: contain;
 }
 .wrapper {
   display: flex;
@@ -974,7 +974,6 @@ button:hover {
 
 @media screen and (max-width: 1665px) {
   label {
-    color: #6B6B6B;
     padding-left: 20px;
     padding-bottom: 5px;
     padding-top: 20px;
@@ -982,57 +981,79 @@ button:hover {
   }
 
   input {
-    outline: none;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 20px;
-    border-radius: 30px;
-    border-style: solid;
-    border-color: #DDDDDD;
-    background-color: #FCFCFC;
     height: 35px;
     width: 100%;
   }
 
   select {
-    outline: none;
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 30px;
     font-size: 20px;
-    border-radius: 30px;
-    border-style: solid;
-    border-color: #DDDDDD;
-    border-width: 2px;
-    background-color: #FCFCFC;
     height: 35px;
     width: 100%;
   }
 
   button {
-    outline: none;
-    cursor: pointer;
     height: 40px;
     width: 100%;
     margin-top: 30px;
-    background-color: #FF645A;
-    border: none;
-    color: white;
-    border-radius: 30px;
-    font-weight: bold;
     font-size: 20px;
   }
 
   h1 {
     font-size: 36px;
     line-height: 36px;
-    color: #ff645a;
   }
 
   .header p {
     font-size: 24px;
     padding-top: 15px;
-    color: #505050;
   }
-}
+  @media screen and (max-width: 1430px){
+    label {
+      padding-left: 20px;
+      padding-bottom: 5px;
+      padding-top: 20px;
+      font-size: 12px;
+    }
+
+    input {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 16px;
+      height: 35px;
+      width: 100%;
+    }
+
+    select {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 20px;
+      font-size: 16px;
+      height: 35px;
+      width: 100%;
+    }
+
+    button {
+      height: 40px;
+      width: 100%;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    .header p {
+      font-size: 20px;
+      padding-top: 15px;
+    }
+  }
+  }
 </style>

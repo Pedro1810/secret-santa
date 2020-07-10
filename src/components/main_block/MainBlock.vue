@@ -52,7 +52,7 @@ a {
 
 .body {
   padding: 10px;
-  height: 550px;
+  height: 500px;
   background-color: #00A460;
   background-image: url("../../assets/santas/santa_homepage.svg");
   background-size: cover;
@@ -73,7 +73,6 @@ a {
   line-height: 80px;
   color: white;
   margin: 0;
-
 }
 
 .line {
@@ -83,7 +82,7 @@ a {
 }
 
 .now {
-  font-size: 20px;
+  font-size: 24px;
   color: #494949;
   margin: 0;
   padding: 0;
@@ -91,7 +90,7 @@ a {
 
 .name {
   margin: 0;
-  font-size: 20px;
+  font-size: 24px;
   color: #494949;
   font-family: CrocWebRegular;
 }
@@ -119,8 +118,8 @@ a {
 .main_title {
   display: flex;
   flex-direction: column;
+  margin-top: auto;
 }
-
 
 .main {
   display: flex;
@@ -149,5 +148,48 @@ button {
 
 button:hover {
   background-color: #b04740;
+}
+
+@media screen and (max-width: 1665px) {
+  .now {
+    font-size: 20px;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .numbers {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  button {
+    height: 50px;
+    font-size: 20px;
+  }
+  .body {
+    height: 420px;
+  }
+  .titile_h1 {
+    font-size: 62px;
+    line-height: 60px;
+  }
+  .corplife {
+    font-size: 20px;
+  }
+  .members {
+    width: 25%;
+    margin-right: 20%;
+    margin-top: 10%;
+  }
+  .now {
+    font-size: 16px;
+  }
+  .name {
+    font-size: 16px;
+  }
+  .numbers {
+    font-size: 42px;
+  }
 }
 </style>

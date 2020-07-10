@@ -68,16 +68,19 @@ img {
 }
 @media screen and (max-width: 1315px) {
     img {
-        height: 60px;
+        height: 70px;
     }
     p {
-        font-size: 10px;
+        font-size: 12px;
         text-align: left;
         width: 350px;
     }
     h2 {
         font-size: 15px;
         color: #FF645A;
+    }
+    .footer .wrapper {
+        max-width: 70%;
     }
 }
 </style>

@@ -34,4 +34,10 @@ import UserList from './UserList'
     line-height: 32px;
     color: white;
 }
+@media screen and (max-width: 1430px) {
+    .title {
+        font-size: 40px;
+        line-height: 32px;
+    }
+}
 </style>

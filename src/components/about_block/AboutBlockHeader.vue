@@ -77,4 +77,21 @@ h2 {
         width: 100px;
     }
 }
+@media screen and (max-width: 1430px) {
+    .closed {
+        margin-left: 10%;
+        align-self: center;
+        cursor: pointer;
+        height: 80px;
+        width: 80px;
+    }
+    .opened {
+        margin-left: 10%;
+        align-self: center;
+        cursor: pointer;
+        transform: rotate(90deg);
+        height: 80px;
+        width: 80px;
+    }
+}
 </style>
